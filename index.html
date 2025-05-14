@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Convertisseur de devises</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Convertisseur de devises</h1>
+
+  <form id="converter-form">
+    <input type="number" id="amount" placeholder="Montant en EUR" required>
+    
+    <select id="currency">
+      <option value="USD">Dollar américain (USD)</option>
+      <option value="GBP">Livre sterling (GBP)</option>
+      <option value="JPY">Yen japonais (JPY)</option>
+      <option value="MAD">Dirham marocain (MAD)</option>
+      <option value="TND">dinar tunisien (TND)</option> 
+    </select>
+
+    <button type="submit">Convertir</button>
+  </form>
+
+  <div id="result"></div>
+
+  <h2>Historique</h2>
+  <ul id="history-list"></ul>
+  <button id="clear-history">Vider l'historique</button>
+
+  <script src="./script.js"></script>
+</body>
+</html>
